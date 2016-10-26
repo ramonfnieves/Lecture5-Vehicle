@@ -36,7 +36,7 @@ public class CarStage extends JComponent {
 
 		int nextYPos = 0;
 		for (int i = 0; i < numberOfLanes; i++) {
-			vehicles[i] = new Vehicle(0,nextYPos,Color.BLUE, 5, 1, i+1);
+			vehicles[i] = new MutableCar(0,nextYPos,Color.BLUE, 5, 1, i+1);
 			nextYPos += laneHeight;
 		}
 	}
