@@ -2,7 +2,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Raceable {
 
 	private double xPos = 0;
 	private double yPos = 0;
@@ -41,6 +41,9 @@ public abstract class Vehicle {
 		return number;
 	}
 	
+	public abstract int getHeight();
+	
+
 	public void setPosition(double xPos, double yPos){
 
 		this.xPos=xPos;
@@ -67,8 +70,6 @@ public abstract class Vehicle {
 	public void moveInX(int deltaXCar1) {
 		this.xPos += deltaXCar1;
 	}
-
-
 
 	public abstract void draw(Graphics g);
 
